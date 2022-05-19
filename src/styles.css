@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --bg-color: #101010;
+  --cell-color: #2a2a2a;
+  --cell-hover-color: #3f3f3f;
+  --cell-active-color: #4a4a4a;
+  --revealed-cell-color: #1a1a1a;
+  --button-color: #1a1a1a;
+  --button-hover-color: #2a2a2a;
+  --button-active-color: #3f3f3f;
+
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: white;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Work Sans", sans-serif;
+}
