@@ -116,8 +116,9 @@ export function Board({ rows, columns, bombs }: BoardOptions) {
         const surrounding = getSurroundingIndices(index)
 
         const flagsAround = surrounding.filter((i) => cells[i].isFlagged).length
+        const bombsAround = surrounding.filter((i) => cells[i].hasBomb).length
 
-        if (flagsAround) {
+        if (flagsAround === bombsAround) {
           surrounding
             .filter((i) => !cells[i].isFlagged)
             .forEach((i) => recursiveReveal(i))
